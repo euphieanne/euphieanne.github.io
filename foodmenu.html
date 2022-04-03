@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>foodmenu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/banner.jpg");
+  min-height: 90%;
+}
+</style>
+<link rel="stylesheet" href="facios.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div >
+    <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+      <a href="faciosmainpage.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="foodmenu.html" class="w3-bar-item w3-button">MENU</a>
+      <a href="aboutfacios.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="contact.html" class="w3-bar-item w3-button">CONTACT</a>
+      <a href="reservation.html" class="w3-bar-item w3-button">RESERVE</a>
+    </div>
+  </div>
+  
+<!-- Menu Container -->
+<div class="bgimg w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:0px; background-color: black;">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey" style="background-color: black;">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Food');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Food</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drink');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Drink</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Other');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Other</div>
+      </a>
+    </div>
+
+    <div id="Food" class="w3-container menu w3-padding-32 w3-white">
+      <h1 style="margin-bottom: 0px;"><b class="foodDrinkName">Facio's Burger</b></h1>
+      <h1 style="margin: 0px;"><b class="foodDrinkNameSub">with fries and drink</b> <span class="pricebox">140</span></h1>
+      <h1 style="margin: 0px;"><b class="foodDrinkNameSub">ala carte</b> <span class="pricebox">125</span></h1>
+      <p class="description" style="margin: 0;">Pure beef patty with veggies (lettuce, onion, tomato, pickles)</p>
+      <hr> 
+      <h1 style="margin-bottom: 0px;"><b class="foodDrinkName">Aloha Burger</b></h1>
+      <h1 style="margin: 0px;"><b class="foodDrinkNameSub">with fries and drink</b> <span class="pricebox">150</span></h1>
+      <h1 style="margin: 0px;"><b class="foodDrinkNameSub">ala carte</b> <span class="pricebox">135</span></h1>
+      <p class="description" style="margin: 0;">Pure beef patty with veggies (lettuce, onion, tomato, pickles) <a style="font-weight: bold;"> and pineapple</a></p>
+      <hr> 
+      <h1 style="margin-bottom: 0px;"><b class="foodDrinkName">Cheesy Burger</b></h1>
+      <h1 style="margin: 0px;"><b class="foodDrinkNameSub">with fries and drink</b> <span class="pricebox">140</span></h1>
+      <h1 style="margin: 0px;"><b class="foodDrinkNameSub">ala carte</b> <span class="pricebox">125</span></h1>
+      <p class="description" style="margin: 0;">Pure beef patty with veggies (lettuce, onion, tomato, pickles) <a style="font-weight: bold;"> and cheese</a></p>
+      <hr>   
+      
+    </div>
+
+    <div id="Drink" class="w3-container menu w3-padding-32 w3-white">
+        <h1 style="margin-bottom: 0px;"><b class="foodDrinkName">Shake</b></h1>
+        <h1 style="margin: 0px;"><b class="foodDrinkNameSub">Mango</b> <span class="pricebox">80</span></h1>
+        <h1 style="margin: 0px;"><b class="foodDrinkNameSub">Papaya</b> <span class="pricebox">125</span></h1>
+        <hr> 
+        <h1 style="margin-bottom: 0px;"><b class="foodDrinkName">Milk Tea</b></h1>
+        <h1 style="margin: 0px;"><b class="foodDrinkNameSub">Chocolate</b> <span class="pricebox">80</span></h1>
+        <h1 style="margin: 0px;"><b class="foodDrinkNameSub">Matcha</b> <span class="pricebox">125</span></h1>
+        <hr>
+        <h1 style="margin-bottom: 0px;"><b class="foodDrinkName">Can</b></h1>
+        <h1 style="margin: 0px;"><b class="foodDrinkNameSub">Coca cola</b> <span class="pricebox">80</span></h1>
+        <h1 style="margin: 0px;"><b class="foodDrinkNameSub">Sprite</b> <span class="pricebox">125</span></h1>
+        <hr>
+        <h1 style="margin: 0px;"><b class="foodDrinkName">Blue Lemonade Pitcher</b> <span class="pricebox">80</span></h1>
+        
+        <hr>   
+      </div>
+
+    <div id="Other" class="w3-container menu w3-padding-32 w3-white">
+        <h1 style="margin-bottom: 0px;"><b class="foodDrinkName">Cakes</b></h1>
+        <h1 style="margin: 0px;"><b class="foodDrinkNameSub">Chocolate fudge</b> <span class="pricebox">80</span></h1>
+        <h1 style="margin: 0px;"><b class="foodDrinkNameSub">Cheese cake</b> <span class="pricebox">125</span></h1>
+        <hr> 
+        <h1 style="margin: 0px;"><b class="foodDrinkName">halo-halo</b> <span class="pricebox">80</span></h1>
+        
+   
+    </div>
+
+  </div>
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
